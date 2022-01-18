@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FCC7CF;
+}
+
+.navbar {
+    width: 100%;
+    background-color: darkslategrey;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 20vh;
+}
+
+.navbar li {
+    list-style: none;
+}
+
+#Home {
+    transition: 1s font-size ease-out, 1s color ease-in-out;
+}
+
+#Home:hover {
+    transform: scale(2, 2);
+    color: #FCC7CF;
+}
