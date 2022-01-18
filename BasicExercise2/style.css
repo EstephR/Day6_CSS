@@ -29,11 +29,49 @@ body {
     list-style: none;
 }
 
+
+/* You have to address both the link and the li Item to achieve both transitions */
+
+#Home>a,
 #Home {
-    transition: 1s font-size ease-out, 1s color ease-in-out;
+    transition: 500ms ease-out, 500ms color ease-out;
 }
 
+#Home>a:hover,
 #Home:hover {
-    transform: scale(2, 2);
+    transform: scale(1.5, 1.5);
     color: #FCC7CF;
+}
+
+#About>a,
+#About {
+    transition: 200ms ease-out;
+}
+
+#About>a:hover,
+#About:hover {
+    transform: translate(0px, 10px);
+    background-color: #FCC7CF;
+    padding: 5px;
+}
+
+#Services>a,
+#Services {
+    transition: 500ms font-size cubic-bezier(1, 0, 0, 1)
+}
+
+#Servies>a:hover,
+#Services:hover {
+    font-size: 2em;
+}
+
+#References>a,
+#References {
+    transition: 700ms font-weight ease-in-out, 700ms letter-spacing ease-in-out;
+}
+
+#References>a:hover,
+#References:hover {
+    font-weight: bold;
+    letter-spacing: 0.5em;
 }
