@@ -90,12 +90,14 @@ h1 {
     padding: 10px 0;
     color: white;
     font-weight: bold;
+    font-size: 2em;
     background-color: rgba(197, 197, 197, 0.4);
     width: 100%;
     text-align: center;
     opacity: 0;
+    transition: 500ms ease-in-out;
 }
 
-.images:hover>.maintext {
+.images:hover .maintext {
     opacity: 1;
 }
